@@ -1,12 +1,5 @@
 Rails.application.routes.draw do
   
-  get 'static_pages/about'
-  get 'static_pages/ani'
-  get 'static_pages/contact'
-  get 'static_pages/francois'
-  get 'static_pages/home'
-  get 'static_pages/JR'
-  get 'static_pages/titouan'
   get '/', to: 'static_pages#home'
   get '/contact', to: 'static_pages#contact'
   get '/about', to: 'static_pages#about'
