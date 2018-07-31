@@ -1,7 +1,8 @@
 # Repository du site <a href="https://i-love-forms.herokuapp.com/">"I love forms"</a>
 > Revisité par la Fine Équipe.
 
-(même avec un nom comme ça, c'est toujours pas super sexy)
+
+(Avec un nom comme ça, c'est déjà plus sexy et vous ne serez pas déçu)
 
 Salut les loulous, alors comme ça on vous avait manqué? Non? Bon.
 C'est pas grave, prenez quand même dans les dents notre super projet Formulaire !
