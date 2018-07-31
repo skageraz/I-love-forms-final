@@ -21,4 +21,4 @@ D'abord il faut commencer par cloner le repository
 rails server
 ```
 
-Fais avec amour par François D., Titouax, Anisoara et JR !
+Fait avec amour par François D., Titouax, Anisoara et JR !
