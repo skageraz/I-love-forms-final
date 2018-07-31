@@ -1,24 +1,24 @@
-# README
+# Ze super appli Formulaire
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+(même avec un nom comme ça, c'est toujours pas super sexy)
 
-Things you may want to cover:
+Salut les loulous, alors comme ça on vous avait manqué? Non? Bon.
+C'est pas grave, prenez quand même dans les dents notre super projet Formulaire !
 
-* Ruby version
+ ## Instructions
 
-* System dependencies
+D'abord il faut commencer par cloner le repository
+```
+ git clone https://github.com/skageraz/I-love-forms-final
+ ```
+ puis
+ ```
+ bundle install --without production
+ rails db:migrate
+ ```
+ et enfin
+```
+rails server
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Fait avec amour par François D., Titouax, Anisoara et JR !
