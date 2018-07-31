@@ -1,15 +1,19 @@
+<!--Titre de la page-->
 <h1>Bienvenue dans la création d'utilisateurs !</h1>
-
+<!--Conteneur un rangé, 3 colonnes(1/4, 1/2, 1/4)-->
 <div class="container">
   <div class="row">
     <div class="col-3"></div>
       <div class="col-6">
+        <!--Formulaire Form_for Ruby fx Bootstrap-->
         <div class="form">
           <h2>S'identifier</h2>
+          <!--Déclaration de début de fomulaire, désignation de l'action dans le controller-->
           <%= form_for @user, url: {action: "create3"} do |f| %>
           <div class="form-group">
           <%= f.label 'Pseudo' %>
           <%= f.text_field :username, class:"form-control", placeholder: "Pseudo" %>
+          <!--Commentaire d'input-->
           <small id=“emailHelp” class=“form-text text-muted”>Évite de mettre des espaces 😉</small>
           </div>
           <div class="form-group">
@@ -22,6 +26,7 @@
           <%= f.text_area :bio, class:"form-control", placeholder: "bio"  %>
         </div>
           <%= f.submit "Balance ta life", class: "btn btn-primary" %> <br>
+          <!--Bouton retour-->
           <a href =“/”>Retour</a>
           <% end %>
         </div>

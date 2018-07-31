@@ -1,5 +1,20 @@
 <h1>Voici ton profil <%= @username %></h1>
-<p>voici ton id : <%= @id %></p>
-<p>voici ton email : <%= @email %></p>
-<p>voici ta bio de BG :</p>
-<p><%= @bio %></p>
+<hr>
+<br>
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Username</th>
+      <th scope="col">ID</th>
+      <th scope="col">Email</th>
+      <th scope="col">Biographie</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="text-align: center">
+      <th scope="row"><%= @username %></th>
+      <td><%= @id %></td>
+      <td><%= @email %></td>
+      <td><%= @bio %></td>
+    </tr>

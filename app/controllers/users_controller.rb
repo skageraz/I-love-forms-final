@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
+  #Allez à la page création
   def new
 
   end
 
+  #Méthode Post du formulaire HTML
   def create
     puts params
     user = User.new
@@ -17,9 +19,9 @@ class UsersController < ApplicationController
     else
       redirect_to "/error"
     end
-
   end
 
+  #Méthode Post du formulaire Form_for
   def create2
     puts params
     user = User.new
@@ -34,14 +36,16 @@ class UsersController < ApplicationController
     else
       redirect_to "/error"
     end
-  
+
   end
 
+  #Méthode Post du formulaire Form_Tag
   def create3
    @user = User.create(username: params[:user][:username], email: params[:user][:email], bio: params[:user][:bio])
    redirect_to "/users/#{User.last.username}"
  end
 
+ #Méthode de test des username sur la DB
  def test
    if @user.new_record? == false
      redirect_to :action => “show”, :controller => “home”, :username => @user.username
@@ -50,7 +54,7 @@ class UsersController < ApplicationController
    end
  end
 
-
+ #Méthode affichage page profile nouvel utilisateur
   def show
     @username = params[:username]
     @id = User.find_by(username: @username).id
@@ -58,15 +62,17 @@ class UsersController < ApplicationController
     @bio = User.find_by(username: @username).bio
   end
 
+  #Mathode Get page erreurs
   def error
   end
 
+  #Création d'un utilisateur au début du Post du formulaire Form_for
   def form_for
     @user = User.new
   end
 
+  #Post du Form_tag
   def form_tag
 
   end
-
 end

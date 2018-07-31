@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+# Action GET des pages statics  
   def about
   end
 

@@ -1,27 +1,32 @@
-
+<!-- Titre de la page -->
   <h1>Bienvenue dans la création d'utilisateurs !</h1>
-
+<!-- conteneur avec un rangé 3 colonnes 1/4 1/2 1/4 -->
   <div class="container">
     <div class="row">
       <div class="col-3"></div>
         <div class="col-6">
-
+          <!--Formulaire-->
             <form action="/new" method="post">
+              <!--Token-->
               <input type="hidden" name="authenticity_token"
               value="<%= form_authenticity_token %>">
+              <!--Groupe prénom-->
               <div class="form-group">
-                <label>Ton prenom</label>
+                <label>Ton prénom</label>
                 <input type="text" name="username" class="form-control" aria-describedby="emailHelp" placeholder="Username">
                 <small class="form-text text-muted">Évite de mettre des espaces 😉</small>
               </div>
+              <!--Groupe Email-->
               <div class="form-group">
                 <label >Ton email</label>
                 <input type="email" name="email" class="form-control"  placeholder="Email">
               </div>
+              <!--Groupe Biographie-->
               <div class="form-group">
                 <label>Ta bio</label>
                 <textarea name="bio" class="form-control" rows="4"></textarea>
               </div>
+              <!--Bouton-->
               <button type="submit" name"envoyer" class="btn btn-primary">Envoyer</button>
             </form>
           </div>
