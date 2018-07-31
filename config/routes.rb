@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'about/JR', to: 'static_pages#JR'
   get '/new', to: 'users#new'
   get '/form_tag', to: 'users#new'
+  post '/form_tag', to: 'users#create'
   post '/new', to: 'users#create'
   get '/error', to: 'users#error', as: 'error'
   get '/error2', to: 'users#error2', as: 'error2'
