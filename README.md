@@ -28,7 +28,7 @@ rails server
 
 Cliquez ensuite <a href="http://localhost:3000/">ici</a> pour visiter le site en "local"
 
-Cher correcteur/correctrice, si vous avez bien executez toutes ces commandes, tout devrait bien se passer.
+Cher correcteur/correctrice, si vous avez bien executé toutes ces commandes, tout devrait bien se passer.
 Mettez-nous la note maximale. 
 
 ## La Fameuse Fine Équipe ##
