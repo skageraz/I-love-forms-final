@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'about/titouan', to: 'static_pages#titouan'
   get 'about/JR', to: 'static_pages#JR'
   get '/new', to: 'users#new'
+  get '/form_tag', to: 'users#new'
+  post '/form_tag', to: 'users#create'
   post '/new', to: 'users#create'
   get '/form_for', to: 'users#new'
   post '/form_for', to: 'users#create'
