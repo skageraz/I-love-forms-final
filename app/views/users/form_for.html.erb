@@ -9,7 +9,7 @@
         <div class="form">
           <h2>S'identifier</h2>
           <!--Déclaration de début de fomulaire, désignation de l'action dans le controller-->
-          <%= form_for @user, url: {action: "create3"} do |f| %>
+          <%= form_for @user, url: {action: "create3"} do |f| %> #fait appel à la methode create3 du users controller
           <div class="form-group">
           <%= f.label 'Pseudo' %>
           <%= f.text_field :username, class:"form-control", placeholder: "Pseudo" %>
@@ -18,7 +18,7 @@
           </div>
           <div class="form-group">
           <%= f.label 'Email' %>
-          <%= f.text_field :email, type:"email", class:"form-control", placeholder: "email"  %>
+          <%= f.text_field :email, type:"email", class:"form-control", placeholder: "email"  %> #permet de verifier que l'input est bien un email
           <small id=“emailHelp” class=“form-text text-muted”>L’adresse e-mail doit être valide</small>
         </div>
         <div class="form-group">
