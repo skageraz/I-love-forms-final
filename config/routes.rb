@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   post '/form_for', to: 'users#create3'
   get '/error', to: 'users#error', as: 'error'
   get '/error2', to: 'users#error2', as: 'error2'
-  get '/users/:username', to: 'users#show', as: 'show'
+  get '/users/:username', to: 'users#show', as: 'show' #permet de generer des URl dynamiques avec le username
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
